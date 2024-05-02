@@ -1,0 +1,17 @@
+$white-dark: #EEEEEE;
+$black: #000;
+
+footer{
+    height: 34px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    background-color: $white-dark;
+
+    p{
+        font-size: 12px;
+        font-weight: 400;
+        color: $black;
+        text-align: center;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,24 @@
+$white: #FFFFFF;
+$blue: #0F52BA;
+$blue-light: #166ef3;
+
+.bottom-bar{
+    height: 31.907px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    background-color: $blue;
+    cursor: pointer;
+
+    span{
+        font-size: 14px;
+        font-weight: 600;
+        color: $white;
+    }
+}
+
+.bottom-bar:hover{
+    background-color: $blue-light;
+}

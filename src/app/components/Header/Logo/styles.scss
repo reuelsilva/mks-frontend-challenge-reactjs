@@ -1,0 +1,26 @@
+$text-white: #FFFFFF;
+
+div.text-logo{
+    position: relative;
+
+    span{
+        height: 2.75rem;
+        color: $text-white;
+        display: inline-block;
+    }
+
+    span:first-child{
+        width: 8rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    span:last-child{
+        position: absolute;
+        top: 17px;
+        left: 100px;
+        width: 12.5rem;
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+}

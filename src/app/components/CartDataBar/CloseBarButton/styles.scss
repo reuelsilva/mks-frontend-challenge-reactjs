@@ -1,0 +1,24 @@
+$black : #000;
+$white: #FFF;
+
+div.elipse{
+    height: 38px;
+    width: 38px;
+    
+    cursor: pointer;
+    position: absolute;
+    top: 39px;
+    right: 22px;
+    border-radius: 50%;
+    background-color: $black;
+    text-align: center;
+
+    .close-indicator{
+        span{
+            font-size: 28px;
+            font-weight: 400;
+            color: $white;
+            line-height: 38px;
+        }
+    }
+}

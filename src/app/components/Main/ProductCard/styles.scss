@@ -1,0 +1,32 @@
+$white: #FFFFFF;
+$dark: #2C2C2C;
+$bg-price: #373737;
+
+
+.product-name-and-price{
+    height: 38px;
+    display: flex;
+    position: relative;
+    gap: 4px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+    h1{
+        font-size: 16px;
+        font-weight: 400;
+        color: $dark;
+        width: 124px;
+    }
+
+    span{
+        position: absolute;
+        right: 0px;
+        bottom: 9px;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: $bg-price;
+        color: $white;
+        padding: 4px 6px 4px 7px;
+        border-radius: 5px;
+    }
+}

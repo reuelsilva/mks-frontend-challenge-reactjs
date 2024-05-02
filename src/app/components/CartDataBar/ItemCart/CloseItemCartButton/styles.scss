@@ -1,0 +1,26 @@
+$black : #000;
+$white: #FFF;
+
+div.elipse-sm{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $black;
+    text-align: center;
+
+    .close-indicator{
+        span{
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+            line-height: 18px;
+        }
+    }
+}
