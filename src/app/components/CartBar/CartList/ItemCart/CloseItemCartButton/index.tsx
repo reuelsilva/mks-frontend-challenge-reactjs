@@ -4,7 +4,6 @@ import { Montserrat } from "next/font/google";
 import "./styles.scss"
 import { CartContext } from "@/app/context/CartContext";
 
-
 const montserrat = Montserrat({
     subsets:["latin"],
     weight: "400"
