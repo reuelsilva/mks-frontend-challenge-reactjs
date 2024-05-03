@@ -1,7 +1,7 @@
 "use client"
 import { ReactElement, useContext } from "react";
-import ItemCart from "../ItemCart";
 import { CartContext } from "@/app/context/CartContext";
+import ItemCart from "./ItemCart";
 import EmptyCartMessage from "./EmptyCartMessage";
 import "./styles.scss"
 
