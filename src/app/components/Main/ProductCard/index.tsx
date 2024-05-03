@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import getFormatPrice from "@/app/hooks/get-format-price";
-import SendToCartButton from "../SendToCartButton";
+import ProductCardButton from "../ProductCard/ProductCardButton";
 import "./styles.scss";
 
 const montserrat = Montserrat({
@@ -20,7 +20,7 @@ export default function ProductCard({product}: ProductCardProps):ReactElement{
         <div className="product-card">
             <div className="product-data">
             
-                <Image src={product.photo} alt="Imagem produto" width={150} height={138}/>
+            <Image src={product.photo} alt="Imagem produto" width={150} height={138}/>
                 
                 <div className="product-name-and-price">
                     <h1 className={`${montserrat.className}`}>{product.name}</h1>
@@ -29,7 +29,7 @@ export default function ProductCard({product}: ProductCardProps):ReactElement{
                 <p className={`${montserrat.className}`}>{product.description}</p>
             </div>
 
-            <SendToCartButton product={product}/>
+            <ProductCardButton product={product}/>
         </div>
     )
 }

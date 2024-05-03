@@ -1,6 +1,6 @@
 "use client"
 import { ReactElement, useContext } from "react";
-import ShopIcon from "../ShopIcon";
+import ShopIcon from "./ShopIcon";
 import { CartContext } from "@/app/context/CartContext";
 import { Montserrat } from "next/font/google";
 import "./styles.scss"
@@ -11,9 +11,7 @@ const montserrat = Montserrat({
     weight: "600"
 })
 
-
-const openCartBar = () => {
-        
+const openCartBar = () => {    
     const Bar = document.getElementById("cartBar");
     const statusBar = Bar?.classList.contains("hideCartBar")
     
@@ -36,7 +34,6 @@ export default function SendToCartButton({product}: SendToCartProsp):ReactElemen
             const priceInteger = parseInt(price)
             setTotalPrice(totalPrice + priceInteger)
         }
-
     }
 
     const updateCartBar = () => { 
