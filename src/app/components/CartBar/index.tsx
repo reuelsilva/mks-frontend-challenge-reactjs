@@ -1,10 +1,10 @@
 "use client"
 import { ReactElement, useContext } from "react";
 import { Montserrat } from "next/font/google";
-import "./styles.scss"
-import CloseBarButton from "./CloseBarButton";
+import CloseCartBarButton from "./CloseCartBarButton";
 import CartList from "./CartList";
 import { CartContext } from "@/app/context/CartContext";
+import "./styles.scss"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -12,16 +12,14 @@ const montserrat = Montserrat({
     display: "swap"
 })
 
-export default function CartDataBar():ReactElement{
+export default function CartBar():ReactElement{
     const {totalPrice} = useContext(CartContext)
     return(
         <div id="cartBar" className="hideCartBar">
             <div className="cart-data-info">
                 <h2 className={`${montserrat.className}`}>Carrinho de Compras</h2>
-                <CloseBarButton/> 
-
+                <CloseCartBarButton/> 
                 <CartList/>
-                
                 <div className="cart-data-price">
                     <div><span className={`${montserrat.className}`}>Total:</span></div>
                     <div><span className={`${montserrat.className}`}>R${totalPrice}</span></div>

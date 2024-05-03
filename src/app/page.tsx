@@ -4,7 +4,7 @@ import { CartProvider } from "./context/CartContext";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import CartDataBar from "./components/CartDataBar";
+import CartBar from "./components/CartBar";
 
 export default function Home() {
   const client = new QueryClient()
@@ -16,7 +16,7 @@ export default function Home() {
         <QueryClientProvider client={client}>
           <Main/>
         </QueryClientProvider>
-        <CartDataBar/>
+        <CartBar/>
       </CartProvider>
       <Footer/>
     </div>
