@@ -1,6 +1,7 @@
 "use client"
 import { ReactElement } from "react";
 import { Montserrat } from "next/font/google";
+import toggleCartBar from "@/app/hooks/toggle-cart-bar";
 import "./styles.scss"
 
 
@@ -9,18 +10,9 @@ const montserrat = Montserrat({
     weight: "400"
 })
 
-const toggleBar = () => {
-    const Bar = document.getElementById("cartBar");
-    if(Bar){
-        Bar.classList.toggle("showCartBar")
-        Bar.classList.toggle("hideCartBar")
-    }
-    
-}
-
-export default function CloseBarButton(): ReactElement{
+export default function CloseCartBarButton(): ReactElement{
     return(
-        <div className="elipse" title="Fechar" onClick={toggleBar}>
+        <div className="elipse" title="Fechar" onClick={toggleCartBar}>
             <div className="close-indicator">
                 <span className={`${montserrat.className}`}>X</span>
             </div>
