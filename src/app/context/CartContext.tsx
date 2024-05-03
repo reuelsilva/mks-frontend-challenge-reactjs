@@ -7,7 +7,6 @@ export const CartContext = createContext({
     setProductsStorage: (value: ProductsData[]) => {},
     totalPrice: 0,
     setTotalPrice: (value: number) => {}
-    
 })
 
 interface CartProviderProps{
