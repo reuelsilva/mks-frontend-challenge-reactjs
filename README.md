@@ -1,5 +1,5 @@
 <p>Desafio Front-end para vaga Programador Júnior Front-end Developer (React)</p>
-<p><strong>descrição:</strong> Renderizar a lista de produtos da loja e manipular o carrinho de compras.</p>
+<p><strong>descrição:</strong> Renderizar a lista de produtos da loja e exibir um carrinho de compras interativo.</p>
  <h2>Tecnologias</h2>
  <ul>
    <li>NextJS ⚫</li>
