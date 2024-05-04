@@ -6,6 +6,6 @@
    <li>React 🔵</li> 
    <li>TypeScript 🔵</li>
    <li>JavaScript 🟡</li> 
-   <li>S 🔴</li> 
+   <li>Sass 🔴</li> 
    <li>HTML 🟠 </li>
  </ul>
