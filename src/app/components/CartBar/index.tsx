@@ -1,9 +1,9 @@
 "use client"
 import { ReactElement, useContext } from "react";
+import { CartContext } from "@/app/context/CartContext";
 import { Montserrat } from "next/font/google";
 import CloseCartBarButton from "./CloseCartBarButton";
 import CartList from "./CartList";
-import { CartContext } from "@/app/context/CartContext";
 import "./styles.scss"
 
 const montserrat = Montserrat({
