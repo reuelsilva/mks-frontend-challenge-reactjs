@@ -1,7 +1,4 @@
 $zinc: #F9F9F9;
-$white: #FFFFFF;
-$dark: #2C2C2C;
-$bg-price: #373737;
 
 main{
     background-color: $zinc;
@@ -9,52 +6,3 @@ main{
     padding-bottom: 172px;
 }
 
-div.grid-container{
-    display: grid;
-    grid-template-columns: repeat(4, 218px);
-    grid-template-rows: repeat(2, auto);
-    grid-row-gap: 31px;
-    grid-column-gap: 22px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-
-    .skeleton-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        justify-content: center;
-        width: 218px;
-        height: 305px;
-    }
-
-    .product-card{
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-        border-radius: 8px;
-        background-color: $white;
-
-        .product-data{
-            display: flex;
-            flex-direction: column;
-            padding-top: 18px;
-            padding-right: 12px;
-            padding-bottom: 12px;
-            padding-left: 14px;
-            flex-grow: 1;
-
-            img{
-                margin-right: auto;
-                margin-left: auto;
-            }
-            
-            p{
-                font-size: 10px;
-                font-weight: 300;
-                color:  $dark;
-            }
-        }
-    }
-}
